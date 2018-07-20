@@ -3,7 +3,7 @@ public class BubbleSort
 {
     public void bubbleSort(int[] arr)
     {
-        if ((arr == null) || arr.length == 1) 
+        if ((arr == null) || (arr.length == 1)) 
         {
             return ;
         }
@@ -19,11 +19,11 @@ public class BubbleSort
                     int tmp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = tmp;
-                    k = j; //k remember's the first position of the orderd sequence from tail
+                    k = j; //k remembers the first position of the orderd sequence from tail
                 }
-                System.out.println(Arrays.toString(arr) + "k=" + k + ", i=" + i);
+                // System.out.println(Arrays.toString(arr) + "k=" + k + ", i=" + i);
             }
-            i = k + 1;//i jumps to the last disorder one, in the worst case, k equals i-1
+            i = k + 1; //i jumps to the last disorder one, in the worst case, k equals i-1
         }
 
     }
