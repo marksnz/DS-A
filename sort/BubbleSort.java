@@ -8,11 +8,14 @@ public class BubbleSort
             return ;
         }
         
-        for (int i = arr.length -1; i > 0; i--) {
+        for (int i = arr.length -1; i > 0; i--) 
+        {
             int k = 0;
-            for (int j = 0; j < i; j++) {
-                
-                if (arr[j] > arr[j+1]) {
+            for (int j = 0; j < i; j++) 
+            {
+
+                if (arr[j] > arr[j+1]) 
+                {
                     int tmp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = tmp;
@@ -24,7 +27,8 @@ public class BubbleSort
         }
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         int[] a = {20,40,30,10,60,50};
         // int[] a = {10,20,30,40,60,50};
         new BubbleSort().bubbleSort(a);
