@@ -1,4 +1,7 @@
 import java.util.Arrays;
+/**
+ *bubble sort by marksnz @2018-7-21 0:50:17
+*/
 public class BubbleSort
 {
     public void bubbleSort(int[] arr)
@@ -13,7 +16,6 @@ public class BubbleSort
             int k = 0;
             for (int j = 0; j < i; j++) 
             {
-
                 if (arr[j] > arr[j+1]) 
                 {
                     int tmp = arr[j];
@@ -25,8 +27,8 @@ public class BubbleSort
             }
             i = k + 1; //i jumps to the last disorder one, in the worst case, k equals i-1
         }
-
     }
+
     public static void main(String[] args) 
     {
         int[] a = {20,40,30,10,60,50};
