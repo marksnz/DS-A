@@ -42,11 +42,11 @@ public class QuickSort
         }
 
         int mid = partition(arr, left, right);
-        if (mid > 1) 
+        if (mid - 1 > left) 
         {
             quickSort1(arr, left, mid -1);
         }
-        if (mid < right -1) 
+        if (mid + 1 < right) 
         {
             quickSort1(arr, mid + 1, right);
         }
